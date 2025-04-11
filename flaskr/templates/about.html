@@ -5,18 +5,39 @@ About Cats on Skis
 {% endblock %}
 
 {% block content %}
-<h3>About Cats on Skis</h3>
+<section class="section">
+  <div class="container">
+    <h3 class="title is-3 has-text-info-dark">About Cats on Skis</h3>
+    <p class="subtitle is-5">
+      Welcome to the most paws-itively thrilling wiki on the web! 🐾⛷️ 
+      Here, you'll discover everything there is to know about the majestic, snow-shredding felines we lovingly call <strong>Cats on Skis</strong>.
+    </p>
 
-<p>
-We love Cats on Skis! This is the absolute best place to find information about cats on skis.
-</p>
+    <hr>
 
-<h3>Your Authors</h3>
+    <h3 class="title is-4">Your Authors</h3>
+    <div class="columns is-vcentered is-multiline">
+      <div class="column is-narrow has-text-centered">
+        <figure class="image is-128x128 is-inline-block">
+          <img class="is-rounded" src="{{ url_for('images', image='slalom-sammy') }}" alt="Slalom Sammy">
+        </figure>
+        <p class="has-text-weight-semibold mt-2" title="The fastest cat on the slopes!">Slalom Sammy</p>
+      </div>
+      <!-- You can duplicate this column block below to add more authors -->
+    </div>
 
-<p>
-Slalom Sammy 
-<img src="{{ url_for('images', image='slalom-sammy') }}">
-</p>
+    <div class="content mt-5">
+      <h4 class="title is-5">Our Mission</h4>
+      <p>
+        We aim to inspire awe, laughter, and curiosity about the wonderful (and very real, we promise) world of skiing cats. Whether you're a fan, a skier, or a cat lover — you're in the right place.
+      </p>
 
+      <h4 class="title is-5">Want to Contribute?</h4>
+      <p>
+        Interested in sharing your own tales or photos of snow-loving felines? Reach out to us or create your own wiki page!
+      </p>
+    </div>
+  </div>
+</section>
 {% endblock %}
 
