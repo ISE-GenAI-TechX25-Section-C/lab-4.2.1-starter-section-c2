@@ -19,3 +19,45 @@ p {
     margin-left: 15px;
     background-color: lightblue;
 }
+/* Style the links */
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+/* General hover effect for page buttons */
+a:hover {
+    color: darkorange;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Nav bar styles */
+nav {
+    background-color: #004080;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+/* Nav links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Nav link hover effect */
+nav a:hover {
+    color: lightyellow !important; /* !important helps make sure it overrides */
+    background-color: #005cb3; /* A slightly lighter blue for hover effect */
+}
